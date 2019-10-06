@@ -27,9 +27,9 @@
 		<div class="logo">
 			<div class="row">
 				<div class="col-sm-8">
-					<img src="assets/imagens/logo.png" alt="" />
+					<img src="assets/imagens/reciclagem-logo2.png" alt="" />
 				</div>
-				<div class="col-sm-4">					
+				<div class="col-sm-3">					
 					<a href="lista-reciclagem.php">
 						<button type="button" class="btn btn-danger sair btn_lista_reciclagem">
 							<i class="glyphicon glyphicon-list"></i>
