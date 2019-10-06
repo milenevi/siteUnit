@@ -1,0 +1,133 @@
+/* layout */
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+
+#bem-vindo{
+	margin-top: 42px;
+    text-align: right;
+    width: 353px;
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th{
+	border: 1px solid #000 !important;
+}
+
+.table-responsive input{
+    /*width: 100px;*/
+    height: 11px;
+    border: medium none;
+    margin: 0;
+    border-right: medium none;
+    padding-right: 6px !important;
+    /*background-color: transparent;*/
+}
+
+#tabela-editavel tr td{
+	height: 37px !important;
+}
+
+#mainTable tr td{
+	height: 37px !important;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.logo{
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.logo button{
+    text-transform: uppercase;
+}
+
+/* index.php */
+.botoes{
+	margin-top: 130px;
+}
+
+.botoes button,
+.botoes_mes button{
+    text-transform: uppercase;
+	height: 50px;
+    width: 185px;
+    margin: 15px;
+}
+
+.botoes a,
+.botoes_mes a{
+	display: block;
+    margin-left: 42px;
+    text-align: center;
+    width: 70%;
+}
+
+/* cadastro.php */
+.form_cadastro h3{
+	text-transform: uppercase;
+}
+
+.form_cadastro form{
+	margin-top: 15px;
+}
+
+.btn_cadastrar{
+	margin-top: 10px !important;	
+	margin-bottom: 20px !important;	
+}
+
+.btn_limpar{
+	margin-top: 10px !important;	
+	margin-left: -7px;
+}
+
+.btn_lista_medicos{
+	margin-left: 8px;
+}
+.btn_lista_salvar{
+	margin-left: 84px;
+}
+.btn_lista_salvar1{
+	margin-top: 10px !important;	
+	margin-bottom: 20px !important;	
+}
+
+/*BOTÕES NO TOPO DAS PÁGINAS*/
+.btn_lista_medicos_voltar{
+	margin-left: 82px;
+}
+
+.btn_inicio{
+	margin-left: 6px;
+}
+
+.classe_operario {
+    margin-left: 186px;
+}
+
+/*---------------FIM BOTÕES TOPO--------------*/
+
+/*LISTA DE MÉDICOS*/
+.lista{
+	margin-top: 25px;
+}
+
+/*CONTROLE DE GUIAS MES*/
+.botoes_mes{
+	margin-top: 100px;
+}
+
+.ano_vigente{
+	margin-bottom: 20px;
+}
+
+.espaco_meses{
+	margin-top: 15px;
+}
+
