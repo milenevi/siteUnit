@@ -6,7 +6,7 @@
 
 require "config.php";
 
-class Recicl {
+class Reciclagem {
   
     public $conn;
 

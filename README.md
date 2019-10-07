@@ -30,16 +30,18 @@ software para projetar bem o software.
 		--bairro
 		--cidade
 		--estado
-		--foto da situação do lixo
-		--sua localização no mapa
+		--longitude
+		--latitude
+		--foto da situação do lixo		
 		--comentário
+* localização no mapa dos pontos de coleta de lixo
 * construir as validações em JavaScript
 * páginas:
 	-pagina principal
-	-listagem
+	-listagem ----- ok
 	-visualização
-	-edição
-	-deleção
+	-edição 
+	-deleção -----ok
 		
 O site também deve oferecer a possibilidade de visualização do mapa unificado dos lixos encontrado nas
 Cidades de forma que todos os registros de lixos sejam visualizados na tela de forma única.
@@ -52,4 +54,8 @@ Cidades de forma que todos os registros de lixos sejam visualizados na tela de f
 -- Tela cadastro
 * falta colocar mensagem quando for cadastrado no banco com sucesso
 * validar se os campos foram preenchidos ou não
-* mudar a logo
+
+
+--o editar precisa ajustar a confirmação, mas já está editando
+--ajustar o campo CEP, p levar sem formatação
+--colocar mensagem de cadastrado com sucesso
