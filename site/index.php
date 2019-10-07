@@ -118,17 +118,18 @@
 
 							<div class="col-sm-3">															
 								<div class="form-group">
-									<label for="exampleInputEmail1">LONGITUDE</label>
-								    <input type="text" class="form-control" id="logitude" placeholder="LONGITUDE" name="logitude">
+									<label for="exampleInputEmail1">LATITUDE</label>
+								    <input type="text" class="form-control" id="latitude" placeholder="LATITUDE" name="latitude">
 								</div>
 							</div>
 
 							<div class="col-sm-3">															
 								<div class="form-group">
-									<label for="exampleInputEmail1">LATITUDE</label>
-								    <input type="text" class="form-control" id="latitude" placeholder="LATITUDE" name="latitude">
+									<label for="exampleInputEmail1">LONGITUDE</label>
+								    <input type="text" class="form-control" id="longitude" placeholder="LONGITUDE" name="longitude">
 								</div>
 							</div>
+
 						</div>					
 
 						<div class="row">	

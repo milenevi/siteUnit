@@ -11,7 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 CREATE DATABASE IF NOT EXISTS `mydb_reciclagem`;
 
---USE `mydb_reciclagem`;
+USE `mydb_reciclagem`;
 
 CREATE TABLE IF NOT EXISTS `mydb_reciclagem`.`reciclagem` (
   `idreciclagem` INT(11) NOT NULL AUTO_INCREMENT,

@@ -40,8 +40,8 @@ software para projetar bem o software.
 	-pagina principal
 	-listagem ----- ok
 	-visualização
-	-edição 
-	-deleção -----ok
+	-edição ----- ok
+	-deleção ----- ok
 		
 O site também deve oferecer a possibilidade de visualização do mapa unificado dos lixos encontrado nas
 Cidades de forma que todos os registros de lixos sejam visualizados na tela de forma única.
@@ -59,3 +59,5 @@ Cidades de forma que todos os registros de lixos sejam visualizados na tela de f
 --o editar precisa ajustar a confirmação, mas já está editando
 --ajustar o campo CEP, p levar sem formatação
 --colocar mensagem de cadastrado com sucesso
+
+--mudei o campo latutude e longitude no banco para: DECIMAL(10, 8)

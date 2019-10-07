@@ -113,17 +113,18 @@
 
 							<div class="col-sm-3">															
 								<div class="form-group">
-									<label for="exampleInputEmail1">LONGITUDE</label>
-								    <input type="text" class="form-control" placeholder="LONGITUDE" id="logitude" name="logitude" value="<?=$reciclagem->logitude?>">
+									<label for="exampleInputEmail1">LATITUDE</label>
+								    <input type="text" class="form-control" placeholder="LATITUDE" id="latitude" name="latitude" value="<?=$reciclagem->latitude?>">
 								</div>
 							</div>
 
 							<div class="col-sm-3">															
 								<div class="form-group">
-									<label for="exampleInputEmail1">LATITUDE</label>
-								    <input type="text" class="form-control" placeholder="LATITUDE" id="latitude" name="latitude" value="<?=$reciclagem->latitude?>">
+									<label for="exampleInputEmail1">LONGITUDE</label>
+								    <input type="text" class="form-control" placeholder="LONGITUDE" id="longitude" name="longitude" value="<?=$reciclagem->longitude?>">
 								</div>
 							</div>
+
 						</div>
 
 						<div class="row">							
