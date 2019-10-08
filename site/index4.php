@@ -15,27 +15,31 @@
 
         </script>
 
-<?php
 
-        foreach ($reciclagem as $key => $value):
-           
-?>
         <script type="text/javascript">
-            var map;
+           
+
+
             
-            //pegar as informações do banco e colocar na variavel JS
-            var latitude = "<?php echo $value['latitude'];?>"            
-            var longitude = "<?php echo $value['longitude'];?>";
-            var descricao = "<?php echo $value['nome_rua'];?>";
+var map;
             
             //só está printando o ultimo marcador cadastrado
             function initMap(){
-                var mapOptions = {
-                    center: {lat: parseFloat(latitude) , lng: parseFloat(longitude)},
-                    zoom: 5
-                };
+                <?php
 
-                map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                    foreach ($reciclagem as $key => $value):
+           
+                ?>
+            
+                //pegar as informações do banco e colocar na variavel JS
+            var latitude = "<?php echo $value['latitude'];?>";            
+            var longitude = "<?php echo $value['longitude'];?>";
+            var descricao = "<?php echo $value['nome_rua'];?>";
+
+
+                console.log(latitude);
+
+                map = new google.maps.Map(document.getElementById('map'), 8);
 
                 //marcador
                 const marker = new google.maps.Marker({
@@ -47,38 +51,14 @@
                     draggable: true,
                 });
 
-                let infoWindow = new google.maps.InfoWindow({
-                    content: '<h2> Informação do marcador </h2>'
-                    //position: 100px, 
-                    //maxWidth: 200px
-                });
-
-                //evento de click para quando clicar no marcador abrir o infoWindow
-                marker.addListener('click', () => {
-                    infoWindow.open(map, marker);
-                });
-
-                //evento para quando clicar adicionar um marcador
-                map.addListener('click', function(e) {
-                    var clickPosition = e.latLng;//pegar a posição do mapa
-                    new google.maps.Marker({
-                        position: clickPosition, //posição que ele clicou no mapa
-                        map: map,
-                        //title: 'Centro de Fortaleza',
-                        //icon: 'imagem/pino.jpg',
-                        animation: google.maps.Animation.DROP,
-                        draggable: true,
-                    });
-                    console.log(e.latLng);
-                }); 
-                            
+<?php        
+    endforeach;
+?>                            
             }
 
          </script>
 
-<?php        
-    endforeach
-?>
+
        <!--  <h1> Título </h1> -->
         
     </body>

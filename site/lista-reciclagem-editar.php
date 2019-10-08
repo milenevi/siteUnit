@@ -63,12 +63,20 @@
 						</div>	
 					</div>
 					<form id="frm_editar_reciclagem" method="POST">					
+					<div class="row">							
+							<div class="col-sm-12">								
+								<div class="form-group">
+									<label for="exampleInputEmail1">NOME</label>
+								    <input type="text" name="name" class="form-control" id="name"  value="<?=$reciclagem->name?>">
+								    <input type="hidden" name="id" id="id" value="<?=$reciclagem->idreciclagem?>">
+								</div>
+							</div>
+						</div>
 						<div class="row">							
 							<div class="col-sm-12">								
 								<div class="form-group">
 									<label for="exampleInputEmail1">NOME DA RUA</label>
-								    <input type="text" name="nome_rua" class="form-control" id="nome_rua"  value="<?=$reciclagem->nome_rua?>">
-								    <input type="hidden" name="id" id="id" value="<?=$reciclagem->idreciclagem?>">
+								    <input type="text" name="nome_rua" class="form-control" id="nome_rua"  value="<?=$reciclagem->nome_rua?>">								    
 								</div>
 							</div>
 						</div>

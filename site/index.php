@@ -70,6 +70,15 @@
 						</div>	
 					</div>
 					<form id="frm_novo_reciclagem"  name="form_validar" method="post">
+						
+						<div class="row">								
+							<div class="col-sm-12">		
+								<div class="form-group">
+									<label for="exampleInputEmail1">NOME</label>
+								    <input type="text" class="form-control" placeholder="O NOME" name="name">								   
+								</div>
+							</div>
+						</div>
 						<div class="row">							
 							<div class="col-sm-12">		
 								<div class="form-group">

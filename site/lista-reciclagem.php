@@ -42,6 +42,7 @@
 						<thead>
 					    	<tr>
 					          <th>Código</th>
+					          <th>Nome</th>
 					          <th>Nome Rua</th>
 					          <th>Ações</th>
 					        </tr>
@@ -55,8 +56,9 @@
 					     ?>
 
 					        <tr id="reciclagem-<?=$value['idreciclagem']?>">
-					          	<th width="10%" scope="row"><?=$value['idreciclagem']?></th>
-					          	<td width="65%"><?=$value['nome_rua']?></td>
+					          	<th width="5%" scope="row"><?=$value['idreciclagem']?></th>
+					          	<td width="35%"><?=$value['name']?></td>
+					          	<td width="30%"><?=$value['nome_rua']?></td>
 					          	<td width="25%">
 					          		<a href="lista-reciclagem-editar.php?id=<?=$value['idreciclagem']?>">
 					          			<button type="submit" name="submit" value="edit" class="btn btn-success">
