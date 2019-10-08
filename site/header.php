@@ -10,7 +10,7 @@
 	<!-- meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/map.css">	
+    <!-- <link rel="stylesheet" type="text/css" href="css/map.css">	 -->
 	<meta charset="utf-8" />
 	<meta name="author" content="Milene Vieira Lopes">
 

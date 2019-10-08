@@ -59,8 +59,8 @@ class Reciclagem {
 
     function cadastrar($dados){
       // print_r($dados); die;
-       $stmt = $this->conn->prepare('INSERT INTO reciclagem (nome_rua, numero, CEP, bairro, cidade, estado, link_foto_sit_lixo, latitude, longitude, comentario) 
-                              VALUES(:nome_rua, :numero, :CEP, :bairro, :cidade, :estado, :link_foto_sit_lixo, :latitude, :longitude, :comentario)');  
+       $stmt = $this->conn->prepare('INSERT INTO reciclagem (nome_rua, numero, CEP, bairro, cidade, estado, link_foto_sit_lixo, latitude, longitude, comentario, name) 
+                              VALUES(:nome_rua, :numero, :CEP, :bairro, :cidade, :estado, :link_foto_sit_lixo, :latitude, :longitude, :comentario, :name)');  
 
        $stmt->execute(array(
           ':nome_rua' => $dados['nome_rua'],
@@ -72,7 +72,8 @@ class Reciclagem {
           ':link_foto_sit_lixo' => $dados['link_foto_sit_lixo'],
           ':latitude' => $dados['latitude'],
           ':longitude' => $dados['longitude'],
-          ':comentario' => $dados['comentario']
+          ':comentario' => $dados['comentario'],
+          ':name' => $dados['name']
           
       ));
 
@@ -87,7 +88,7 @@ class Reciclagem {
 
     function editar($dados){
        $stmt = $this->conn->prepare('UPDATE reciclagem SET nome_rua = :nome_rua, numero = :numero, CEP = :CEP, bairro = :bairro, cidade = :cidade, estado = :estado, link_foto_sit_lixo = :link_foto_sit_lixo,
-                                                  latitude = :latitude, longitude = :longitude, comentario = :comentario
+                                                  latitude = :latitude, longitude = :longitude, comentario = :comentario, name = :name
                                                   WHERE idreciclagem = :id');
         try{
            $stmt->execute(array(
@@ -101,7 +102,8 @@ class Reciclagem {
               ':link_foto_sit_lixo' => $dados['link_foto_sit_lixo'],
               ':latitude' => $dados['latitude'],
               ':longitude' => $dados['longitude'],
-              ':comentario' => $dados['comentario']
+              ':comentario' => $dados['comentario'],
+              ':name' => $dados['name']
           ));
           
         }catch(Exception $e){

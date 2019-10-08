@@ -29,7 +29,6 @@ foreach ($reciclagem as $key => $value):
   echo 'lat="' . $value['latitude'] . '" ';
   echo 'lng="' . $value['longitude'] . '" ';
   echo '/>';
-
 endforeach;
 
 // End XML file

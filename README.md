@@ -61,3 +61,5 @@ Cidades de forma que todos os registros de lixos sejam visualizados na tela de f
 --colocar mensagem de cadastrado com sucesso
 
 --mudei o campo latutude e longitude no banco para: DECIMAL(10, 8)
+
+-- falta criar para armazenar uma foto

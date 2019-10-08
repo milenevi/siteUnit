@@ -1,26 +1,21 @@
-<!DOCTYPE html >
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Using MySQL and PHP with Google Maps</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
+<?php
+  require "header.php";
+?>
 
 <html>
   <body>
+  <nav class="navigation">
+  <a 
+    href="javascript: void(0)" 
+    class="logo left">    
+  </a>
+  <a 
+  href="index.php" target="_blank" 
+  class="contact right">Cadastrar ponto</a>
+  </nav>
+
     <div id="map"></div>
+
 
     <script>
       var customLabel = {
