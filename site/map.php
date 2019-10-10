@@ -3,17 +3,18 @@
     $latitude = -3.716816;
     $longitude = -38.519115;
     $descricao = 'Centro de Fortaleza';
+    $_SUA_CHAVE_API_ = 'AIzaSyCHbHUiC05PkgiiWPgaKoygYmYqb_rC1R4&callback';
 ?>
     <body>
         <!-- Div para o mapa -->
     	<div id="map"></div>
 
         <!-- Código para renderizar o mapa -->
-		<!-- <script src="js/map.js"></script> -->
+		<script src="js/maps.js" async defer></script>
 
 		<!-- Maps API Javascript para que funcione o mapa -->
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHbHUiC05PkgiiWPgaKoygYmYqb_rC1R4&callback=initMap" async defer>
-
+        <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHbHUiC05PkgiiWPgaKoygYmYqb_rC1R4&callback=initMap" async defer> -->
+        <script type="text/javascript" src="//maps.google.com/maps/api/js?key= <?php echo $$_SUA_CHAVE_API_;?>  =initMap"></script>
         </script>
 
         <script type="text/javascript">
