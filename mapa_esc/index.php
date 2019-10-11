@@ -1,64 +1,40 @@
 <?php
   require "header.php";  
+  require "menu.php";
+  require "config.php";
+
 
   $_SUA_CHAVE_API_GERAL = new Chave();
   $_SUA_CHAVE_API_GERAL =  $_SUA_CHAVE_API_GERAL->buscar_todos();  
 
 ?>
-<html>
-<body>
+<link id="scrollUpTheme" rel="stylesheet" href="css/themes/tab.css">
+<script src="assets/js/jquery.scrollUp.min"></script>
+  <!-- importações js -->
+<script type="text/javascript" src="assets/js/jquery-2.1.4.js"></script>  
+  
+<body class="hold-transition skin-blue sidebar-mini">
 
-<div class="map" id="map">
-  <div id="googlemap">
-    <div class="gm-style">        
-    </div>
-  </div>
-</div>
+<div class="wrapper">
+  <!-- Main Header ficava aqui o que está no arquivo perfil-->
+<?php
+  require "perfil.php";
+?>
+  <!-- Left side column. contains the logo and sidebar ficaria aqui o menu, mas retirei-->
 
-<div><div class="background"></div><div class="swipe"><ul id="slider"></ul></div></div>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
 
-<nav class="navigation">
-  <a href="javascript: void(0)" class="logo left"></a>
-  <a href="index.php" target="_blank" class="contact right">Cadastrar ponto</a>
-</nav>
+    <!-- Main content -->
+    <section class="content">
+    <div class="container">      
+      
+         
+      <!-- Mapa -->
+    <div class="map" id="map">
+    
 
-<div class="bar">
-  <div class="filter">
-    <select>
-        <option value="Florianópolis" geo="-27.592763, -48.547049" zoom="11">Florianópolis</option>
-        <option value="Joinville" geo="-26.2720962,-48.8916483" zoom="11">Joinville</option>
-        <option value="Blumenau" geo="-26.8892794,-49.0920441" zoom="11">Blumenau</option>
-        <option value="Criciúma" geo="-28.6765419,-49.3737742" zoom="11">Criciúma</option>
-    </select>
-
-    <select>
-    <option value="">Todas</option>
-    <option value="Marketing">Marketing</option>
-    <option value="Tecnologia">Tecnologia</option>
-    <option value="Vendas">Vendas</option>
-    <option value="Suporte/Atendimento">Suporte/Atendimento</option>
-    <option value="Financeiro">Financeiro</option>
-    <option value="Pessoas">Pessoas</option>
-    <option value="Design">Design</option>
-    <option value="Administração">Administração</option>
-    <option value="Projetos">Projetos</option>
-    <option value="null"></option>
-    <option value="#REF!">#REF!</option>
-    </select>
-
-    <div class="companies" id="companies">
-      <ul>
-        <li>
-        <div index="0">
-          <img src="https://media.licdn.com/dms/image/C4E0BAQFpyaAyeIgdkg/company-logo_400_400/0?e=1577318400&amp;v=beta&amp;t=iBLYKCbZWAjbOwzr7nHtmnsIqFskt2fH-NQni2md0Lc">
-          <h2>1Doc</h2>
-          <h3>1 vagas</h3>
-        </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
     <script>
       var customLabel = {
         restaurant: {
@@ -144,5 +120,23 @@
     <?php    
         endforeach
     ?>
-  </body>
+    
+    </div>
+</div>
+    </section>
+
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+ 
+</div>
+<!-- ./wrapper -->
+
+
+<script src="bootstrap2/js/bootstrap.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+
+</body>
 </html>
