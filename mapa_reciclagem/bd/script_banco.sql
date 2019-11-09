@@ -22,8 +22,8 @@ CREATE TABLE IF NOT EXISTS `mydb_reciclagem`.`reciclagem` (
   `cidade` VARCHAR(45) NULL DEFAULT NULL,
   `estado` VARCHAR(45) NULL DEFAULT NULL,
   `link_foto_sit_lixo` VARCHAR(45) NULL DEFAULT NULL,
-  `latitude` INT(11) NOT NULL,
-  `logitude` INT(11) NOT NULL,
+  `latitude` DECIMAL(10, 8) NOT NULL,
+  `longitude` DECIMAL(10, 8) NOT NULL,
   `comentario` VARCHAR(45) NULL DEFAULT NULL,
   PRIMARY KEY (`idreciclagem`))
 ENGINE = InnoDB

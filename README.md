@@ -39,7 +39,7 @@ software para projetar bem o software.
 * páginas:
 	-pagina principal
 	-listagem ----- ok
-	-visualização
+	-visualização ----- ok
 	-edição ----- ok
 	-deleção ----- ok
 		
@@ -51,15 +51,7 @@ Cidades de forma que todos os registros de lixos sejam visualizados na tela de f
 
 --imagem https://br.depositphotos.com/86088272/stock-photo-3d-red-map-pointer-icon.html
 
--- Tela cadastro
-* falta colocar mensagem quando for cadastrado no banco com sucesso
-* validar se os campos foram preenchidos ou não
 
-
---o editar precisa ajustar a confirmação, mas já está editando
 --ajustar o campo CEP, p levar sem formatação
---colocar mensagem de cadastrado com sucesso
 
 --mudei o campo latutude e longitude no banco para: DECIMAL(10, 8)
-
--- falta criar para armazenar uma foto

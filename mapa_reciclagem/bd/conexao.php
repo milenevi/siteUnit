@@ -15,7 +15,7 @@ class Reciclagem {
       $this->conn->exec("set names utf8");      
     }
   
-  //depois verificar aqui
+  
     public function disconnect() // fecha conexao
     {
     if($this->conn)
