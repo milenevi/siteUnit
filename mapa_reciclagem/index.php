@@ -50,7 +50,7 @@
         });
         var infoWindow = new google.maps.InfoWindow;
 
-          // Change this depending on the name of your PHP or XML file
+          
           downloadUrl('resultado.php', function(data) {
             
             var xml = data.responseXML;            

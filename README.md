@@ -55,3 +55,6 @@ Cidades de forma que todos os registros de lixos sejam visualizados na tela de f
 --ajustar o campo CEP, p levar sem formatação
 
 --mudei o campo latutude e longitude no banco para: DECIMAL(10, 8)
+
+
+Google Paltaforma de mapas. Disponível em <https://developers.google.com/maps/documentation/javascript/?hl=pt-br/> Acessado em: 01/10/2019
